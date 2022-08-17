@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CB00448-03E1-494E-8FD3-570DDB889AE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema_automatizaciòn_y_control_de_hotel</RootNamespace>
+    <AssemblyName>Sistema_automatizaciòn_y_control_de_hotel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control_Jornada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control_Jornada.Designer.cs">
+      <DependentUpon>Control_Jornada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iniciar_Sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iniciar_Sesion.Designer.cs">
+      <DependentUpon>Iniciar_Sesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Cocinero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Cocinero.Designer.cs">
+      <DependentUpon>Menu_Cocinero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Administrador.Designer.cs">
+      <DependentUpon>Menu_Administrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Recepcionista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Recepcionista.Designer.cs">
+      <DependentUpon>Menu_Recepcionista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrar Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar Usuario.Designer.cs">
+      <DependentUpon>Registrar Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar_pasajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar_pasajero.Designer.cs">
+      <DependentUpon>Registrar_pasajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalidaPasajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalidaPasajero.Designer.cs">
+      <DependentUpon>SalidaPasajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Termino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Termino.Designer.cs">
+      <DependentUpon>Termino.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Control_Jornada.resx">
+      <DependentUpon>Control_Jornada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iniciar_Sesion.resx">
+      <DependentUpon>Iniciar_Sesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Administrador.resx">
+      <DependentUpon>Menu_Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Cocinero.resx">
+      <DependentUpon>Menu_Cocinero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Recepcionista.resx">
+      <DependentUpon>Menu_Recepcionista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registrar Usuario.resx">
+      <DependentUpon>Registrar Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar_pasajero.resx">
+      <DependentUpon>Registrar_pasajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalidaPasajero.resx">
+      <DependentUpon>SalidaPasajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Termino.resx">
+      <DependentUpon>Termino.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-recepcionista-hotel-servicio-aislado_24877-43717.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfdf %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiadores-productos-limpieza-servicio-limpieza_18591-52068.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_362758618_WX0jPMfVksZcT9J8kQpCb2SB8fB3Nrgj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istock-673891964_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32321.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_1610931-stock-photo-red-velvet-curtain-opening-scene.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premios_SCIE_Informatica_1600x650.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2e7193a9071b1e50b9857d661d922879.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fonrite.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123123213.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EscojerRol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotelaso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotelaso %282%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
